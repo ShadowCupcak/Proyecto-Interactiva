@@ -1,0 +1,28 @@
+:root{
+    /* FONTS */
+    /* font-family */
+    --ff-main: 'Poppins';
+
+
+    /* font size*/
+    --fs-xl: 5rem; /* 80px*/
+    --fs-lg: 2.5rem; /* 40px*/
+    --fs-mlg:1.5rem;
+    --fs-md: 1.125rem; /* 18px*/
+    --fs-nm: 1rem; /* 16px*/
+    --fs-sm: 0.875rem; /* 14px*/
+
+    /* font weight */
+    --fw-bl: 700;
+    --fw-md: 500;
+    --fw-rg: 400;
+
+
+    /* colors */
+    --clr-yellow: 	hsl(56, 79%, 76%);
+    --clr-orange: 	hsl(39, 89%, 55%);
+    --clr-red: 	hsl(22, 96%, 33%);
+    --clr-dark-red: 	hsl(11, 97%, 23%);
+    --clr-white :	hsl(0, 0%, 99%);
+    --crl-black:	hsl(0, 0%, 3%);
+} 

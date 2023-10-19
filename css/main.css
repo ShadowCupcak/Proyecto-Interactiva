@@ -1,8 +1,12 @@
+@import url('./root.css');
+
 .container{
 display: flex;
-background-color: red;
+background: var(--clr-red);
 height: 100px;
+font-family: var(--ff-main);
 }
+
 .containerUl{   
     display: flex;
     padding: 0;
@@ -10,18 +14,27 @@ height: 100px;
     list-style-type: none;
     margin-left: 2rem;
     text-align: center;
+    font-family: var(--ff-main);
+    color: var(--clr-white);
+
 }
+
 .nav-list{
     text-align: center;
 }
+
 .container-header{
     display: flex;
-    background-color: blue;
+    background-color: var(--clr-orange);
     height: 900px;  
 }
+
 .title-featured{
     text-align: center;
+    font-family: var(--ff-main);
+    color: var(--clr-white);
 }
+
 .food-container{
     display: grid;
     width: 80vw;
@@ -29,36 +42,147 @@ height: 100px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
+
 .food-activity{
     display: grid;
-    background: var(--clr-white);
     border-radius: 2rem;
     text-align: center;
     padding: 2rem 1rem;
 }
+
 .food-icon{
         margin: auto;
-        height: 281px;
-        width: 281px;
+        width: 100%;
         border-radius: 3rem;
     
 }
+
 .best-seller-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    background-color: red;
+    background-color: var(--clr-yellow);
     height: 630px;
     }
+
 .best-seller{
     display: flex;
     justify-content: space-between;  
 }
+
 .icon-best{
     height: 630px;
     width: 789.55px;
     border-top-right-radius: 30rem;
 }
+
 .best-seller-text{
     padding-top: 15rem;
     text-align: center;
+    font-family: var(--ff-main)
+}
+.best-seller-name{
+    font-weight: var(--fw-bl);
+    font-size: var(--fs-lg);
+}
+.best-seller-title{
+    font-weight: var(--fw-md);
+    font-size: var(--fs-md);
+}
+.best-seller-button{
+    align-items: center;
+    background: var(--clr-main);
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+}
+.description-icon{
+        margin: auto;
+        height: 590px;
+        width: 819px;
+        border-radius: 7rem;
+}
+.description-title{
+    text-align: center;
+    font-family: var(--ff-main);
+    color: var(--clr-black);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-lg);
+}
+.description-container{
+    display: flex;
+    background-color: var(--clr-white);
+    height: 700px;
+  justify-content: center
+}
+.description{
+    background-color: var(--clr-orange);
+    height: 250px; 
+}
+.descriptionUl{
+    padding: 0; 
+    list-style-type: none;
+    margin-left: 2rem;
+    text-align: center;
+    font-family: var(--ff-main);
+    color: var(--clr-black);
+}
+.description-text{
+    font-weight: var(--fw-rg);
+    font-size: var(--fs-mlg);
+    
+}
+.similar-container{
+    display: grid;
+    width: 80vw;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;  
+}
+.similar-activity{
+    display: grid;
+    background: var(--clr-yellow);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.similar-icon{
+    margin: auto;
+    width: 100%;
+    border-radius: 3rem;
+}
+.similar-title{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-rg);
+    font-size: var(--fs-lg);
+    text-align: center;
+}
+.similar-text{
+    text-align: center;
+    font-family: var(--ff-main);
+    font-weight: var(--fw-rg);
+    font-size: var(--fs-lg);
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: var(--clr-yellow);
+    width: 100%;
+    height: 363px;
+}
+.menu-icon{
+    height: 364px;
+    width: 500px;
+    border-top-right-radius: 30rem;  
+}
+.menu-title{
+    text-align: center;
+    font-family: var(--ff-main);
+    font-weight: var(--fw-bl);
+    font-size: var(--fs-xl);
+}
+.new-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: var(--clr-orange);
+    width: 100%;
+    height: 300px;
 }
