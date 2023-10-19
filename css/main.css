@@ -253,3 +253,11 @@ font-family: var(--ff-main);
     font-size: var(--fs-md); 
     color: var(--clr-black);       
 }
+.main-title{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-bl);
+    font-size: var(--fs-xl); 
+    color: var(--clr-white);
+    text-align: center; 
+    padding: 5rem 0 0;  
+}
