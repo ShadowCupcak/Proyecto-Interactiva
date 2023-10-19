@@ -25,13 +25,14 @@ font-family: var(--ff-main);
 .container-header{
     display: flex;
     background-color: var(--clr-orange);
-    height: 70vw;  
+    height: 30vw;  
 }
 
 .title-featured{
     text-align: center;
     font-family: var(--ff-main);
-    color: var(--clr-white);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-lg);
 }
 
 .food-container{
@@ -43,7 +44,6 @@ font-family: var(--ff-main);
 }
 
 .food-activity{
-    display: grid;
     border-radius: 2rem;
     text-align: center;
     padding: 2rem 1rem;
@@ -52,6 +52,7 @@ font-family: var(--ff-main);
 .food-icon{
         margin: auto;
         width: 100%;
+        height: 35vh;
         border-radius: 3rem;
     
 }
@@ -60,7 +61,7 @@ font-family: var(--ff-main);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     background-color: var(--clr-yellow);
-    height: 55vh;
+    height: 80vh;
     }
 
 .best-seller{
@@ -69,28 +70,31 @@ font-family: var(--ff-main);
 }
 
 .icon-best{
-    height: 630px;
-    width: 789.55px;
+    height: 80vh;
+    width: 100%;
     border-top-right-radius: 30rem;
 }
 
 .best-seller-text{
-    padding-top: 15rem;
     text-align: center;
     font-family: var(--ff-main)
 }
 .best-seller-name{
     font-weight: var(--fw-bl);
-    font-size: var(--fs-lg);
+    font-size: var(--fs-xl);
+    padding: 2rem;
 }
 .best-seller-title{
     font-weight: var(--fw-md);
-    font-size: var(--fs-md);
+    font-size: var(--fs-lg);
+    
 }
 .best-seller-button{
     align-items: center;
     background: var(--clr-main);
     padding: .5rem 2rem;
+    font-weight: var(--fw-md);
+    font-size: var(--fs-md);
     border-radius: 1.5rem;
 }
 .description-icon{
@@ -230,4 +234,34 @@ font-family: var(--ff-main);
     color: var(--clr-white);
     font-weight: var(--fw-md);
     font-size: var(--fs-md);
+}
+.container-icons-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: var(--clr-white);
+    width: 100%;
+    height: 50vw;
+}
+.icons-activity{
+    text-align: center;
+    padding: 10rem 1rem; 
+}
+.icons{
+    margin: auto;
+    width: 20vh; 
+    height: 20vh; 
+}
+.icons-text{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-rg);
+    font-size: var(--fs-md); 
+    color: var(--clr-black);       
+}
+.main-title{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-bl);
+    font-size: var(--fs-xl); 
+    color: var(--clr-white);
+    text-align: center; 
+    padding: 10rem 0 0;  
 }
