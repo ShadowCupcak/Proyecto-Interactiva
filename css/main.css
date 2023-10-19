@@ -265,3 +265,6 @@ font-family: var(--ff-main);
     text-align: center; 
     padding: 10rem 0 0;  
 }
+@media only screen and (max-width: 600px) {
+  
+  }
