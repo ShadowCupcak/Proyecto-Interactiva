@@ -329,4 +329,26 @@ font-family: var(--ff-main);
             text-align: center;
             padding: 1rem 1rem; 
         }
+        .description-icon{
+            margin: auto;
+            width: 50vh;
+            border-radius: 7rem;
+    }
+    .description{
+        background-color: var(--clr-orange);
+        height: 25vh; 
+    }
+    .descriptionUl{
+        padding: 0; 
+        list-style-type: none;
+        margin-left: 2rem;
+        text-align: center;
+        font-family: var(--ff-main);
+        color: var(--clr-black);
+    }
+    .description-text{
+        font-weight: var(--fw-rg);
+        font-size: var(--fs-nm);
+        
+    }
 }
