@@ -266,5 +266,37 @@ font-family: var(--ff-main);
     padding: 10rem 0 0;  
 }
 @media only screen and (max-width: 600px) {
-  
+  .icon-best{
+    display: none;
   }
+  .best-seller-name{
+    font-weight: var(--fw-bl);
+    font-size: var(--fs-lg);
+}
+.best-seller-container{
+    display: flex;
+    background-color: var(--clr-yellow);
+    height: 45 vh;
+    padding: 1rem;
+    }
+    .best-seller-text{
+        text-align: center;
+        font-family: var(--ff-main);
+        padding: 5rem;
+    }
+    .main-title{
+        font-family: var(--ff-main);
+        font-weight: var(--fw-bl);
+        font-size: var(--fs-md); 
+        color: var(--clr-white);
+        text-align: center; 
+        padding: 2rem 0 0;  
+    }
+    .container{
+        display: flex;
+        background: var(--clr-red);
+        height: 10vw;
+        font-family: var(--ff-main);
+        }
+        
+}
