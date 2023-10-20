@@ -215,7 +215,7 @@ font-family: var(--ff-main);
     height: 30vw;
 }
 .containerUl-Footer{   
-    padding: 7rem;
+    padding: 4rem;
     list-style-type: none;
     margin-left: 2rem;
     text-align: center;
@@ -224,7 +224,6 @@ font-family: var(--ff-main);
 }
 
 .nav-list-footer{
-    padding: 1rem;
     text-align: center;
     font-weight: var(--fw-md);
     font-size: var(--fs-md);
@@ -244,7 +243,7 @@ font-family: var(--ff-main);
 }
 .icons-activity{
     text-align: center;
-    padding: 10rem 1rem; 
+    margin: auto;
 }
 .icons{
     margin: auto;
@@ -263,7 +262,7 @@ font-family: var(--ff-main);
     font-size: var(--fs-xl); 
     color: var(--clr-white);
     text-align: center; 
-    padding: 10rem 0 0;  
+    padding: 5rem 0 0;  
 }
 @media only screen and (max-width: 600px) {
   .icon-best{
@@ -276,13 +275,15 @@ font-family: var(--ff-main);
 .best-seller-container{
     display: flex;
     background-color: var(--clr-yellow);
-    height: 45 vh;
-    padding: 1rem;
+    height: 60vh;
+    width: 60vh;
+    padding: 2rem;
+   
     }
     .best-seller-text{
-        text-align: center;
         font-family: var(--ff-main);
-        padding: 5rem;
+        padding: 3rem;
+        margin: auto;
     }
     .main-title{
         font-family: var(--ff-main);
@@ -299,4 +300,33 @@ font-family: var(--ff-main);
         font-family: var(--ff-main);
         }
         
+        .footer-container{
+            display: flex;
+            background: var(--clr-darker-red);
+            width: 100%;
+            height: 30vw;
+        }
+        .containerUl-Footer{   
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+            font-family: var(--ff-main);
+            color: var(--clr-white);
+        }
+        
+        .nav-list-footer{
+            text-align: center;
+            font-weight: var(--fw-md);
+            font-size: var(--fs-md);
+        }
+        .text-footer{
+            font-family: var(--ff-main);
+            color: var(--clr-white);
+            font-weight: var(--fw-md);
+            font-size: var(--fs-md);
+        }
+        .icons-activity{
+            text-align: center;
+            padding: 1rem 1rem; 
+        }
 }
