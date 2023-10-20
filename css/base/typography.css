@@ -55,17 +55,7 @@
     font-size: var(--fs-md);
     color: var(--clr-white);   
 }
-.nav-list-footer{
-    text-align: center;
-    font-weight: var(--fw-md);
-    font-size: var(--fs-md);
-}
-.text-footer{
-    font-family: var(--ff-main);
-    color: var(--clr-white);
-    font-weight: var(--fw-md);
-    font-size: var(--fs-md);
-}
+
 .icons-text{
     font-family: var(--ff-main);
     font-weight: var(--fw-rg);
@@ -79,4 +69,49 @@
     color: var(--clr-white);
     text-align: center; 
     padding: 5rem 0 0;  
+}
+.new-title{
+    text-align: center;
+    font-family: var(--ff-main);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-lg);    
+}
+@media only screen and (max-width: 600px){
+    .best-seller-name{
+        font-weight: var(--fw-bl);
+        font-size: var(--fs-lg);
+    } 
+    .best-seller-text{
+        font-family: var(--ff-main);
+        padding: 3rem;
+        margin: auto;
+    } 
+    .new-title{
+        text-align: center;
+        font-family: var(--ff-main);
+        font-weight: var(--fw-md);
+        font-size: var(--fs-lg);    
+    }
+    .main-title{
+        font-family: var(--ff-main);
+        font-weight: var(--fw-bl);
+        font-size: var(--fs-md); 
+        color: var(--clr-white);
+        text-align: center; 
+        padding: 2rem 0 0;  
+    }
+    .description-text{
+        font-weight: var(--fw-rg);
+        font-size: var(--fs-nm);
+        
+    }
+   
+    .descriptionUl{
+        padding: 0; 
+        list-style-type: none;
+        margin-left: 2rem;
+        text-align: center;
+        font-family: var(--ff-main);
+        color: var(--clr-black);
+    }
 }

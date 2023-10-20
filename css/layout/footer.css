@@ -13,3 +13,29 @@
     font-family: var(--ff-main);
     color: var(--clr-white);
 }
+.nav-list-footer{
+    text-align: center;
+    font-weight: var(--fw-md);
+    font-size: var(--fs-md);
+}
+.text-footer{
+    font-family: var(--ff-main);
+    color: var(--clr-white);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-md);
+}
+@media only screen and (max-width: 600px){
+    .footer-container{
+        display: none;
+    }
+    .containerUl-Footer{   
+        display: none;
+    }
+    .nav-list-footer{
+        display: none;
+    }
+    .text-footer{
+     display: none;
+    }  
+}
+

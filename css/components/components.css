@@ -42,3 +42,29 @@
     width: 20vh; 
     height: 20vh; 
 }
+@media only screen and (max-width: 600px){
+    .icons-activity{
+        text-align: center;
+        padding: 1rem 1rem; 
+    }
+    .description-icon{
+        margin: auto;
+        width: 50vh;
+        border-radius: 7rem;
+}
+.menu-icon{
+    display: none;  
+}
+.icon-best{
+    display: none;
+  }
+  .container-icons-menu {
+    margin-bottom: 20rem; 
+  }
+  .menu-activity{
+    display: block;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+}
