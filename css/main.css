@@ -300,30 +300,34 @@ font-family: var(--ff-main);
         font-family: var(--ff-main);
         }
         
-        .footer-container{
-            display: flex;
-            background: var(--clr-darker-red);
-            width: 100%;
-            height: 30vw;
-        }
-        .containerUl-Footer{   
-            padding: 0;
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            display: none;
+          }
+          
+          .containerUl-Footer {
+            padding: 4rem;
             list-style-type: none;
             text-align: center;
             font-family: var(--ff-main);
             color: var(--clr-white);
-        }
+            margin-left: 2rem;
+            display: none;
+          }
         
         .nav-list-footer{
             text-align: center;
             font-weight: var(--fw-md);
             font-size: var(--fs-md);
+            display: none;
         }
         .text-footer{
             font-family: var(--ff-main);
             color: var(--clr-white);
             font-weight: var(--fw-md);
             font-size: var(--fs-md);
+            display: none;
         }
         .icons-activity{
             text-align: center;
@@ -351,4 +355,29 @@ font-family: var(--ff-main);
         font-size: var(--fs-nm);
         
     }
+    .menu-icon{
+        display: none;  
+    }
+    .new-container{
+        display: flex;
+        background: var(--clr-orange);
+        width: 100%;
+        height: 120vh;
+        flex-direction: column;
+    }
+    .new-title{
+        text-align: center;
+        font-family: var(--ff-main);
+        font-weight: var(--fw-md);
+        font-size: var(--fs-lg);    
+    }
+    .menu-activity{
+        display: block;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+    }
+    .container-icons-menu {
+        margin-bottom: 20rem; 
+      }
 }
