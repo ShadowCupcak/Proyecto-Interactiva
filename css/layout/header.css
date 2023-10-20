@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    background: var(--clr-red);
+    height: 5vw;
+    font-family: var(--ff-main);
+    }
+    
+    .containerUl{   
+        display: flex;
+        padding: 0;
+        gap: 2rem;
+        list-style-type: none;
+        margin-left: 2rem;
+        text-align: center;
+        font-family: var(--ff-main);
+        color: var(--clr-white);
+    }
+    
+    .nav-list{
+        text-align: center;
+    }
+    
+    .container-header{
+        display: flex;
+        background-color: var(--clr-orange);
+        height: 30vw;  
+    }
