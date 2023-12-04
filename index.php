@@ -22,28 +22,24 @@
         include "header.php";
     ?>
     <main>
-        <?php 
-        
-        ?>
-        <!-- destinations -->
-      
-        <?php
+
+       <?php
 echo "<h2 class='title-featured'> Featured Dishes</h2>";
 echo "<div class='food-container'>";
 
-// Utiliza un contador para limitar la cantidad de elementos mostrados a 4
 $count = 0;
 
 foreach ($items as $item) {
     if ($count < 10) {
         echo "<section class='food-activity'>";
         echo "<img class='food-icon' src='./imgs/" . $item["image_platillo"] . "' alt='" . $item["name_platillo"] . "'>";
-        echo "<a class='best-seller-button' href='destination.php?id=" . $item["id_platillo"] . "'>View More</a>";
+        echo "<h3>" . $item["name_platillo"] . "</h3>";
+        echo "<a class='best-seller-button' href='platillo.php?id=" . $item["id_platillo"] . "'>View More</a>";
         echo "</section>";
 
         $count++;
     } else {
-        break;  // Rompe el bucle después de mostrar 4 elementos
+        break; 
     }
 }
 
