@@ -3,7 +3,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     background: var(--clr-darker-red);
     width: 100%;
-    height: 30vw;
 }
 .containerUl-Footer{   
     padding: 4rem;

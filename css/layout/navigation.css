@@ -1,5 +1,7 @@
 .nav-list{
     text-align: center;
+    text-decoration: none;
+    color: var(--clr-white) ;
 }
 .containerUl{   
     display: flex;

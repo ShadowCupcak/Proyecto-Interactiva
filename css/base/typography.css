@@ -113,4 +113,11 @@
         font-family: var(--ff-main);
         color: var(--clr-black);
     }
+    .menu-title{
+        text-align: center;
+        font-family: var(--ff-main);
+        font-weight: var(--fw-bl);
+        font-size: var(--fs-lg);
+        padding-top: 2rem;
+    }
 }

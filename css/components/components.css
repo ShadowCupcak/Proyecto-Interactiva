@@ -1,8 +1,7 @@
 .food-icon{
-    margin: auto;
+    display: block;
     width: 100%;
-    height: 35vh;
-    border-radius: 3rem;
+    border-radius: 1rem;
 
 }
 .icon-best{
