@@ -39,7 +39,7 @@
 
             <div class="form-items">
                 <label for="image_platillo">Platillo image</label>
-                <img id="preview" src="../imgs/<?php echo $item[0]["platillo_image"]; ?>" alt="Preview">
+                <img id="preview" src="../imgs/<?php echo $item[0]["image_platillo"]; ?>" alt="Preview">
             </div>
             <input type="hidden" name="id" value="<?php echo $item[0]["id_platillo"]; ?>">
             <div class="form-items">
