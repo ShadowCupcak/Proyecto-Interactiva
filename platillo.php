@@ -11,9 +11,9 @@
         // Reference: https://medoo.in/api/select
         // Note: don't delete the [>] 
         $item = $database->select("tb_information_dish","*",[
-   
-            "id_platillo"=>$_GET["id"]
+        "id_platillo"=>$_GET["id"]
         ]);
+        $categories = $database->select("tb_category_dish", ["id_category", "category_name"]);
 
         //
 

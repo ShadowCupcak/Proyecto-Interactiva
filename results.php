@@ -1,20 +1,16 @@
 <?php
 require_once './database.php';
 
-// Inicializar el array de condiciones
 $conditions = [];
 
-// Verificar si se proporcionó una palabra clave
 if (isset($_GET["keyword"])) {
     $conditions["name_platillo[~]"] = $_GET["keyword"];
 }
 
-// Verificar si se seleccionó una categoría
 if (isset($_GET["filter"]) && $_GET["filter"] !== "") {
     $conditions["category_platillo"] = $_GET["filter"];
 }
 
-// Realizar la consulta a la base de datos con las condiciones
 $items = $database->select("tb_information_dish", "*", $conditions);
 
 ?>
