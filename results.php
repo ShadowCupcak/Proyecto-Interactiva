@@ -30,7 +30,7 @@ $items = $database->select("tb_information_dish", "*", $conditions);
 </head>
 <body>
     <?php 
-        include "header.php";
+        include "./parts/header.php";
     ?>
     <main>
         <!-- destinations -->
@@ -73,12 +73,12 @@ $items = $database->select("tb_information_dish", "*", $conditions);
         <!-- destinations -->
 
         <?php 
-            include "icons_menu.php";
+            include "./parts/icons_menu.php";
         ?>
 
     </main>
     <?php 
-        include "footer.php";
+        include "./parts/footer.php";
     ?>
 </body>
 </html>

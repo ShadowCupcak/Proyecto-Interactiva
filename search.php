@@ -19,7 +19,7 @@
 </head>
 <body>
     <?php 
-        include "header.php";
+        include "./parts/header.php";
     ?>
     <main>
 
@@ -49,10 +49,10 @@
 
     </main>
     <?php 
-        include "icons_menu.php";
+        include "./parts/icons_menu.php";
     ?>
     <?php 
-        include "footer.php";
+        include "./parts/footer.php";
     ?>
 </body>
 </html>

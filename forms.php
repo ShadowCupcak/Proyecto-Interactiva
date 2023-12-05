@@ -58,7 +58,7 @@
 </head>
 <body>
     <?php 
-        include "header.php";
+        include "./parts/header.php";
     ?>
     <main>
         <!-- destinations -->
@@ -147,7 +147,7 @@
         </section>
     </main>
     <?php 
-        include "footer.php";
+        include "./parts/footer.php";
     ?>
 </body>
 </html>

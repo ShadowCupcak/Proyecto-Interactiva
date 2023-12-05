@@ -19,7 +19,7 @@
 </head>
 <body>
     <?php 
-        include "header.php";
+        include "./parts/header.php";
     ?>
     <main>
 
@@ -47,7 +47,7 @@ foreach ($items as $item) {
 echo "</div>";
 ?>
 <?php 
-        include "icons_menu.php";
+        include "./parts/icons_menu.php";
     ?>
          
 
@@ -57,7 +57,7 @@ echo "</div>";
 
     </main>
     <?php 
-        include "footer.php";
+        include "./parts/footer.php";
     ?>
 </body>
 </html>
