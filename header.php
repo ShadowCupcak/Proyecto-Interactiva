@@ -2,7 +2,10 @@
         <header>
             <div class="container">
                 <ul class="containerUl">
-                    <li class="nav-list">Home</li>
+                    
+                <?php
+                    echo  "<li><a class='nav-list' href='index.php'>Home</a></li>"; 
+                    ?>
                     <li class="nav-list">Shop</li>
                     <li class="nav-list">About</li>
                     <li class="nav-list">Contact</li>
