@@ -20,7 +20,9 @@
                 echo "<td><a href='edit.php?id=".$item["id_platillo"]."'>Edit</a> <a href='delete.php?id=".$item["id_platillo"]."'>Delete</a></td>";
                 echo "</tr>";
             }
+            echo "<td><a href='add.php?'>Add</a>";
         ?>
+        
     </table>
     
 </body>
