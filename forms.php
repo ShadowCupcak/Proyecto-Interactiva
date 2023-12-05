@@ -14,26 +14,17 @@
                     session_start();
                     $_SESSION["isLoggedIn"] = true;
                     $_SESSION["fullname"] = $user[0]["fullname"];
-                    header("location: index.php");
-                    $_SESSION["isAdmin"] = $user[0]["admin"]; 
+                    header("location: index.php"); 
                 }else{
                     $messageLogin = "wrong username or password";
                 }
             }else{
                 $messageLogin = "wrong username or password";
             }
-            //validate if user already logged in
-            /*session_start();
-            if(isset($_SESSION["isLoggedIn"])){
-                header("location: book.php?id=".$_POST["login"]);
-            }else{
-                //validate login
-                echo "validate login: ".$_POST["login"];
-            }*/
+    
         }
 
         if(isset($_POST["register"])){
-            //validate if user already registered
             $validateUsername = $database->select("tb_users","*",[
                 "usr"=>$_POST["username"]
             ]);
@@ -48,8 +39,6 @@
                     "pwd"=> $pass,
                     "email"=> $_POST["email"]
                 ]);
-
-                //header("location: book.php?id=".$_POST["register"]);
             }
         }
     }
