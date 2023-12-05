@@ -6,7 +6,9 @@
                     <li class="nav-list">Shop</li>
                     <li class="nav-list">About</li>
                     <li class="nav-list">Contact</li>
-                    <?php 
+
+                    <?php
+                echo  "<li><a class='nav-list' href='search.php'>Search</a></li>"; 
                 session_start();
                 if(isset($_SESSION["isLoggedIn"])){
                     echo "<li><a class='nav-list' href='profile.php'>".$_SESSION["fullname"]."</a></li>";

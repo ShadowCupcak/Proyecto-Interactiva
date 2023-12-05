@@ -29,11 +29,16 @@
                 <form method="get" action="results.php">
                     <label for="search" class="activity-title">Search</label>
                     <input id="search" class="search" type="text" name="keyword">
-                    <select name="filter" id="filter" class= "filter">
-            
-
-
-             </select>
+                    <select name="filter" id="filter" class="filter">
+    <option value="" selected>Select Category</option>
+    <?php
+    
+    $categories = $database->select("tb_category_dish", ["id_category", "category_name"]);
+    foreach ($categories as $category) {
+        echo "<option value='" . $category["id_category"] . "'>" . $category["category_name"] . "</option>";
+    }
+    ?>
+</select>
                     <input type="submit" class= "btn search-btn" value="Search dish" >
                 </form>
                 
