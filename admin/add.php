@@ -47,7 +47,7 @@
                     "description_platillo" => $_POST["description_platillo"],
                     "image_platillo" => $img,
                     "price_platillo" => $_POST["price_platillo"],
-                    "category_platillo" => $_POST["category_platillo"]  // Agregué la coma que faltaba aquí
+                    "category_platillo" => $_POST["category_platillo"]  
                 ]);
                 
             }
@@ -85,8 +85,6 @@
         ?>
     </select>
 </div>
-
-                </select>
             </div>
             <div class="form-items">
                 <label for="description_platillo">Platillo Description</label>
