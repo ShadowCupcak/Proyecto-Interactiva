@@ -6,8 +6,8 @@
 
     if(isset($_GET["keyword"])){
     
-      $items = $database->select("tb_destinations","*", [
-           "destination_lname[~]" => $_GET["keyword"]
+      $items = $database->select("tb_information_dish","*", [
+           "name_platillo[~]" => $_GET["keyword"]
      ]);
 
   
@@ -38,29 +38,25 @@
         include "./parts/header.php";
     ?>
     <main>
-        <?php 
-            include "./parts/activities.php";
-        ?>
         <!-- destinations -->
-        <section class="destinations-container">
-            <img src="./imgs/icons/destinations.svg" alt="Explore Destinations & Activities">
-            <h2 class="destinations-title">Explore Destinations & Activities</h2>
+        <section class="food-container">
             <?php
                 if (count ($items) > 0) {
                 echo "<p class='activity-text'>We found:  <span class= 'activity-title' >".count ($items)."</span> destinations</p>";
                  }
              ?>
-            <div class="activities-container">
+            <div class="food-container">
           
                 <?php  
                          if (count ($items) > 0) {
                           foreach($items as $item){
-                        echo "<section class='activity'>";
-                        echo "<div class='activity-thumb'>";
-                            echo "<img class='activity-image' src='./imgs/".$item["destination_image"]."' alt='".$item["destination_lname"]."'>";
-                            echo "<button class='like-btn'><img src='./imgs/icons/like.svg' alt='Like'></button>";
-                            echo "<span class='activity-price'>$".$item["destination_price"]."/night</span>";
-                        echo "</div>";
+                            echo "<section class='food-activity'>";
+                            echo "<div class='activities-container'>"
+                            echo "<img class='food-icon' src='./imgs/" . $item["image_platillo"] . "' alt='" . $item["name_platillo"] . "'>";
+                            echo "<h3>" . $item["name_platillo"] . "</h3>";
+                            echo "<a class='best-seller-button' href='platillo.php?id=" . $item["id_platillo"] . "'>View More</a>";
+                            echo "</div>";
+                    
                         echo "<h3 class='activity-title'>".$item["destination_sname"]."</h3>";
                         echo "<p class='activity-text'>".substr($item["destination_description"], 0, 70)."...</p>";
                         echo "<a class='btn read-btn' href='destination.php?id=".$item["id_destination"]."'>View Details</a>";
