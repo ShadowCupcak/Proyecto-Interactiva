@@ -4,6 +4,11 @@
     border-radius: 1rem;
 
 }
+.food-thumb{
+    display: flex;
+    position: relative;
+    padding: 0 1rem;
+}
 .icon-best{
     height: 80vh;
     width: 100%;

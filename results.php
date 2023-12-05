@@ -1,6 +1,6 @@
 
 <?php
-    require_once '../database.php';
+    require_once './database.php';
     // Reference: https://medoo.in/api/select
    // $items = $database->select("tb_destinations","*");
 
@@ -35,14 +35,14 @@
 </head>
 <body>
     <?php 
-        include "./parts/header.php";
+        include "header.php";
     ?>
     <main>
         <!-- destinations -->
-        <section class="food-container">
+        <section class="search-container">
             <?php
                 if (count ($items) > 0) {
-                echo "<p class='activity-text'>We found:  <span class= 'activity-title' >".count ($items)."</span> destinations</p>";
+                echo "<p class='activity-text'>We found:  <span class= 'activity-title' >".count ($items)."</span> Food</p>";
                  }
              ?>
             <div class="food-container">
@@ -51,15 +51,13 @@
                          if (count ($items) > 0) {
                           foreach($items as $item){
                             echo "<section class='food-activity'>";
-                            echo "<div class='activities-container'>"
+                            echo "<div class='food-thumb'>";
                             echo "<img class='food-icon' src='./imgs/" . $item["image_platillo"] . "' alt='" . $item["name_platillo"] . "'>";
-                            echo "<h3>" . $item["name_platillo"] . "</h3>";
-                            echo "<a class='best-seller-button' href='platillo.php?id=" . $item["id_platillo"] . "'>View More</a>";
                             echo "</div>";
-                    
-                        echo "<h3 class='activity-title'>".$item["destination_sname"]."</h3>";
-                        echo "<p class='activity-text'>".substr($item["destination_description"], 0, 70)."...</p>";
-                        echo "<a class='btn read-btn' href='destination.php?id=".$item["id_destination"]."'>View Details</a>";
+                            echo "<h3>" . $item["name_platillo"] . "</h3>";
+                            echo "<span class='activity-price'>$".$item["price_platillo"]."</span>";
+                        echo "<p class='activity-text'>".substr($item["description_platillo"], 0, 70)."...</p>";
+                        echo "<a class='best-seller-button' href='platillo.php?id=".$item["id_platillo"]."'>View Details</a>";
                         echo "</section>";
                         }
                        }else{
@@ -73,21 +71,19 @@
             </div>
 
             <!-- view all -->
-            <div class="cta-container">
-                <a href="search.php" class="btn view-all-btn">Search more destinations</a>
-            </div>
+    
             <!-- view all -->
 
         </section>
         <!-- destinations -->
 
         <?php 
-            include "./parts/subscribe.php";
+            include "icons_menu.php";
         ?>
 
     </main>
     <?php 
-        include "./parts/footer.php";
+        include "footer.php";
     ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
-    require_once '../database.php';
+    require_once './database.php';
     // Reference: https://medoo.in/api/select
-    $items = $database->select("tb_destinations","*");
+    $items = $database->select("tb_information_dish","*");
     
 ?>
 <!DOCTYPE html>
@@ -19,28 +19,22 @@
 </head>
 <body>
     <?php 
-        include "./parts/header.php";
+        include "header.php";
     ?>
     <main>
-        <?php 
-            include "./parts/activities.php";
-        ?>
-        <!-- destinations -->
-        <section class="destinations-container">
-            <img src="./imgs/icons/destinations.svg" alt="Explore Destinations & Activities">
-            <h2 class="destinations-title">Explore Destinations & Activities</h2>
-            <div class="activities-container">
+
+        <section class="food-container">
+            <div class="food-activity">
           
                 <form method="get" action="results.php">
                     <label for="search" class="activity-title">Search</label>
                     <input id="search" class="search" type="text" name="keyword">
-             <select name="filter" id="filter" class= "filter">
-                      <option value="camping_category_name">Camping Category</option>
-                      <option value="us_state_name">US State</option>
+                    <select name="filter" id="filter" class= "filter">
+            
 
 
              </select>
-                    <input type="submit" class= "btn search-btn" value="SEARCH DESTINATION" >
+                    <input type="submit" class= "btn search-btn" value="Search dish" >
                 </form>
                 
             </div>
@@ -50,7 +44,10 @@
 
     </main>
     <?php 
-        include "./parts/footer.php";
+        include "icons_menu.php";
+    ?>
+    <?php 
+        include "footer.php";
     ?>
 </body>
 </html>
