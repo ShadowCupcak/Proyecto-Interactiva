@@ -9,7 +9,7 @@
     }
     
     if($_POST) {
-        $database->delete("tb_information_dish", ["id_platillos" => $_POST["id"]]);
+        $database->delete("tb_information_dish", ["id_platillo" => $_POST["id"]]);
     
     }
 ?>
@@ -30,7 +30,7 @@
             ?>
         </label>
         
-        <form method="post" action="destination.php">
+        <form method="post" action="delete.php">
 
         <div class="form-items">
             <label for="name_platillo">Platillo Name</label>
@@ -43,7 +43,9 @@
             </div>
             <input type="hidden" name="id" value="<?php echo $item[0]["id_platillo"]; ?>">
             <div class="form-items">
-                <input class="submit-btn" type="submit" value="Remove Dish">
+            <a href="list.php" class="list.php">
+            <input class="submit-btn" type="submit" value="Remove Dish">
+            </a>
             </div>
         </form>
     </div>

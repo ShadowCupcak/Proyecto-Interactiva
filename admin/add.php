@@ -100,7 +100,9 @@
                 <input id="price_platillo" class="textfield" name="price_platillo" type="text">
             </div>
             <div class="form-items">
-                <input class="submit-btn" type="submit" value="Add New dish">
+            <a href="list.php" class="list.php">
+            <input class="submit-btn" type="submit" value="Add Dish">
+            </a>
             </div>
         </form>
     </div>

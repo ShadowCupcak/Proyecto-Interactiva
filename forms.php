@@ -145,6 +145,7 @@
                                 <input class='form-input login-btn' type='submit' value="REGISTER">
                             </div>
                         </div>
+                        
                         <p><?php echo $message; ?></p>
                         <input type="hidden" name="register" value="1">
                     </form>
